@@ -5,14 +5,15 @@
 #   include virtualenv
 class virtualenv {
 
-  exec { 'easy_install':
-    command => "sudo easy_install pip",
+    exec { 'easy_install':
+        user => root,
+        command => "easy_install pip",
     }
 
-  package { 'virtualenv':
-    provider => 'pip',
-    source   => 'virtualenv',
-    require => Exec['easy_install'],
-  }
+    package { 'virtualenv':
+        provider => 'pip',
+        source   => 'virtualenv',
+        require => Exec['easy_install'],
+    }
 }
 
