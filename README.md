@@ -1,11 +1,9 @@
-# VirtualBox Puppet Module for Boxen
-
-[![Build Status](https://travis-ci.org/boxen/puppet-virtualbox.png?branch=master)](https://travis-ci.org/boxen/puppet-virtualbox)
+# VirtualEnv Puppet Module for Boxen
 
 ## Usage
 
 ```puppet
-include virtualbox
+include virtualenv
 ```
 
 ## Required Puppet Modules
