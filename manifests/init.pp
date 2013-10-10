@@ -6,7 +6,7 @@
 class virtualenv {
   package { 'virtualenv':
     provider => 'pip',
-    source   => 'virtualenv
+    source   => 'virtualenv',
   }
 }
 
