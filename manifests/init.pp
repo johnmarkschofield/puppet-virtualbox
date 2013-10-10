@@ -12,6 +12,7 @@ class virtualenv {
   package { 'virtualenv':
     provider => 'pip',
     source   => 'virtualenv',
+    require => Exec['easy_install'],
   }
 }
 
